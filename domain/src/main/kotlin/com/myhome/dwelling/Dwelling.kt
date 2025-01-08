@@ -1,4 +1,4 @@
-package com.myhome
+package com.myhome.dwelling
 
 import jakarta.persistence.*
 
