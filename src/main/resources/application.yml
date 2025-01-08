@@ -1,3 +1,5 @@
 spring:
   application:
     name: local
+  jpa:
+    open-in-view: false
