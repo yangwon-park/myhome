@@ -1,5 +1,6 @@
-package com.myhome.dwelling
+package com.myhome.entity.dwelling
 
+import com.myhome.entity.enums.DwellingType
 import jakarta.persistence.*
 
 @Entity
@@ -9,4 +10,9 @@ class Dwelling(
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "dwelling_id")
 	val id: Long? = null,
+
+	val name: String,
+
+	@Enumerated(EnumType.STRING)
+	val type: DwellingType,
 )

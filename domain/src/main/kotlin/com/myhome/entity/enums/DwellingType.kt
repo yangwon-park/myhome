@@ -1,4 +1,4 @@
-package com.myhome.enums
+package com.myhome.entity.enums
 
 enum class DwellingType(
 	override val description: String,
