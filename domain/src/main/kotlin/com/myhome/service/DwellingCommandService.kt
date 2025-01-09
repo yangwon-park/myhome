@@ -1,7 +1,7 @@
 package com.myhome.service
 
 import com.myhome.command.DwellingCommand
-import com.myhome.repository.DwellingRepository
+import com.myhome.repository.dwelling.DwellingRepository
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
 
