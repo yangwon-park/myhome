@@ -1,5 +1,19 @@
 spring:
-  application:
-    name: local
+  profiles:
+    include: domain
   jpa:
-    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    open-in-view: true
+  jackson:
+    deserialization:
+      fail-on-null-for-primitives: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: env
